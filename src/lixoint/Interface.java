@@ -27,33 +27,33 @@ public class Interface extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jSlider4 = new javax.swing.JSlider();
-        jSlider5 = new javax.swing.JSlider();
-        jSlider6 = new javax.swing.JSlider();
+        P2SliderO = new javax.swing.JSlider();
+        P2SliderP = new javax.swing.JSlider();
+        P2SliderV = new javax.swing.JSlider();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jSlider7 = new javax.swing.JSlider();
-        jSlider8 = new javax.swing.JSlider();
-        jSlider9 = new javax.swing.JSlider();
+        P3SliderO = new javax.swing.JSlider();
+        P3SliderP = new javax.swing.JSlider();
+        P3SliderV = new javax.swing.JSlider();
         jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jSlider10 = new javax.swing.JSlider();
-        jSlider11 = new javax.swing.JSlider();
-        jSlider12 = new javax.swing.JSlider();
+        LixoSliderP = new javax.swing.JSlider();
+        LixoSliderO = new javax.swing.JSlider();
+        LixoSliderV = new javax.swing.JSlider();
         jLabel4 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jSlider13 = new javax.swing.JSlider();
-        jSlider14 = new javax.swing.JSlider();
+        Ag1Slider = new javax.swing.JSlider();
+        Ag2Slider = new javax.swing.JSlider();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jSlider1 = new javax.swing.JSlider();
-        jSlider2 = new javax.swing.JSlider();
-        jSlider3 = new javax.swing.JSlider();
+        P1SliderP = new javax.swing.JSlider();
+        P1SliderV = new javax.swing.JSlider();
+        P1SliderO = new javax.swing.JSlider();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -66,26 +66,26 @@ public class Interface extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jSlider4.setMajorTickSpacing(10);
-        jSlider4.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider4.setPaintLabels(true);
-        jSlider4.setPaintTicks(true);
-        jSlider4.setSnapToTicks(true);
-        jSlider4.setValue(0);
+        P2SliderO.setMajorTickSpacing(10);
+        P2SliderO.setOrientation(javax.swing.JSlider.VERTICAL);
+        P2SliderO.setPaintLabels(true);
+        P2SliderO.setPaintTicks(true);
+        P2SliderO.setSnapToTicks(true);
+        P2SliderO.setValue(0);
 
-        jSlider5.setMajorTickSpacing(10);
-        jSlider5.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider5.setPaintLabels(true);
-        jSlider5.setPaintTicks(true);
-        jSlider5.setSnapToTicks(true);
-        jSlider5.setValue(0);
+        P2SliderP.setMajorTickSpacing(10);
+        P2SliderP.setOrientation(javax.swing.JSlider.VERTICAL);
+        P2SliderP.setPaintLabels(true);
+        P2SliderP.setPaintTicks(true);
+        P2SliderP.setSnapToTicks(true);
+        P2SliderP.setValue(0);
 
-        jSlider6.setMajorTickSpacing(10);
-        jSlider6.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider6.setPaintLabels(true);
-        jSlider6.setPaintTicks(true);
-        jSlider6.setSnapToTicks(true);
-        jSlider6.setValue(0);
+        P2SliderV.setMajorTickSpacing(10);
+        P2SliderV.setOrientation(javax.swing.JSlider.VERTICAL);
+        P2SliderV.setPaintLabels(true);
+        P2SliderV.setPaintTicks(true);
+        P2SliderV.setSnapToTicks(true);
+        P2SliderV.setValue(0);
 
         jLabel2.setText("Produtor de Lixo 2 - KG");
 
@@ -100,11 +100,11 @@ public class Interface extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jSlider5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P2SliderP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P2SliderO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSlider6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(P2SliderV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(48, 48, 48))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(60, 60, 60)
@@ -118,9 +118,9 @@ public class Interface extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSlider5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSlider6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P2SliderO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P2SliderP, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P2SliderV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
                 .addGap(15, 15, 15))
@@ -128,26 +128,26 @@ public class Interface extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jSlider7.setMajorTickSpacing(10);
-        jSlider7.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider7.setPaintLabels(true);
-        jSlider7.setPaintTicks(true);
-        jSlider7.setSnapToTicks(true);
-        jSlider7.setValue(0);
+        P3SliderO.setMajorTickSpacing(10);
+        P3SliderO.setOrientation(javax.swing.JSlider.VERTICAL);
+        P3SliderO.setPaintLabels(true);
+        P3SliderO.setPaintTicks(true);
+        P3SliderO.setSnapToTicks(true);
+        P3SliderO.setValue(0);
 
-        jSlider8.setMajorTickSpacing(10);
-        jSlider8.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider8.setPaintLabels(true);
-        jSlider8.setPaintTicks(true);
-        jSlider8.setSnapToTicks(true);
-        jSlider8.setValue(0);
+        P3SliderP.setMajorTickSpacing(10);
+        P3SliderP.setOrientation(javax.swing.JSlider.VERTICAL);
+        P3SliderP.setPaintLabels(true);
+        P3SliderP.setPaintTicks(true);
+        P3SliderP.setSnapToTicks(true);
+        P3SliderP.setValue(0);
 
-        jSlider9.setMajorTickSpacing(10);
-        jSlider9.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider9.setPaintLabels(true);
-        jSlider9.setPaintTicks(true);
-        jSlider9.setSnapToTicks(true);
-        jSlider9.setValue(0);
+        P3SliderV.setMajorTickSpacing(10);
+        P3SliderV.setOrientation(javax.swing.JSlider.VERTICAL);
+        P3SliderV.setPaintLabels(true);
+        P3SliderV.setPaintTicks(true);
+        P3SliderV.setSnapToTicks(true);
+        P3SliderV.setValue(0);
 
         jLabel3.setText("Produtor de Lixo 3 - KG");
 
@@ -164,11 +164,11 @@ public class Interface extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jSlider8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P3SliderP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSlider7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P3SliderO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSlider9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(P3SliderV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(59, 59, 59)
                         .addComponent(jLabel3)))
@@ -182,12 +182,12 @@ public class Interface extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jSlider7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(P3SliderO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSlider9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jSlider8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(P3SliderV, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P3SliderP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(9, 9, 9)
                 .addComponent(jLabel7)
                 .addContainerGap())
@@ -195,26 +195,26 @@ public class Interface extends javax.swing.JFrame {
 
         jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jSlider10.setMajorTickSpacing(10);
-        jSlider10.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider10.setPaintLabels(true);
-        jSlider10.setPaintTicks(true);
-        jSlider10.setSnapToTicks(true);
-        jSlider10.setValue(0);
+        LixoSliderP.setMajorTickSpacing(10);
+        LixoSliderP.setOrientation(javax.swing.JSlider.VERTICAL);
+        LixoSliderP.setPaintLabels(true);
+        LixoSliderP.setPaintTicks(true);
+        LixoSliderP.setSnapToTicks(true);
+        LixoSliderP.setValue(0);
 
-        jSlider11.setMajorTickSpacing(10);
-        jSlider11.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider11.setPaintLabels(true);
-        jSlider11.setPaintTicks(true);
-        jSlider11.setSnapToTicks(true);
-        jSlider11.setValue(0);
+        LixoSliderO.setMajorTickSpacing(10);
+        LixoSliderO.setOrientation(javax.swing.JSlider.VERTICAL);
+        LixoSliderO.setPaintLabels(true);
+        LixoSliderO.setPaintTicks(true);
+        LixoSliderO.setSnapToTicks(true);
+        LixoSliderO.setValue(0);
 
-        jSlider12.setMajorTickSpacing(10);
-        jSlider12.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider12.setPaintLabels(true);
-        jSlider12.setPaintTicks(true);
-        jSlider12.setSnapToTicks(true);
-        jSlider12.setValue(0);
+        LixoSliderV.setMajorTickSpacing(10);
+        LixoSliderV.setOrientation(javax.swing.JSlider.VERTICAL);
+        LixoSliderV.setPaintLabels(true);
+        LixoSliderV.setPaintTicks(true);
+        LixoSliderV.setSnapToTicks(true);
+        LixoSliderV.setValue(0);
 
         jLabel4.setText("Lixeiras - Quantidade em porcentagem");
 
@@ -233,11 +233,11 @@ public class Interface extends javax.swing.JFrame {
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jSlider10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(LixoSliderP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(2, 2, 2)
-                                .addComponent(jSlider11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(LixoSliderO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSlider12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(LixoSliderV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -247,9 +247,9 @@ public class Interface extends javax.swing.JFrame {
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE, false)
-                    .addComponent(jSlider11, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jSlider10, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jSlider12, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LixoSliderO, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(LixoSliderP, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(LixoSliderV, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel10)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -257,19 +257,19 @@ public class Interface extends javax.swing.JFrame {
 
         jPanel5.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 51, 255)));
 
-        jSlider13.setMajorTickSpacing(1);
-        jSlider13.setMaximum(20);
-        jSlider13.setPaintLabels(true);
-        jSlider13.setPaintTicks(true);
-        jSlider13.setSnapToTicks(true);
-        jSlider13.setValue(0);
+        Ag1Slider.setMajorTickSpacing(1);
+        Ag1Slider.setMaximum(20);
+        Ag1Slider.setPaintLabels(true);
+        Ag1Slider.setPaintTicks(true);
+        Ag1Slider.setSnapToTicks(true);
+        Ag1Slider.setValue(0);
 
-        jSlider14.setMajorTickSpacing(1);
-        jSlider14.setMaximum(20);
-        jSlider14.setPaintLabels(true);
-        jSlider14.setPaintTicks(true);
-        jSlider14.setSnapToTicks(true);
-        jSlider14.setValue(0);
+        Ag2Slider.setMajorTickSpacing(1);
+        Ag2Slider.setMaximum(20);
+        Ag2Slider.setPaintLabels(true);
+        Ag2Slider.setPaintTicks(true);
+        Ag2Slider.setSnapToTicks(true);
+        Ag2Slider.setValue(0);
 
         jLabel11.setText("Agentes Coletores de Lixo - KM");
 
@@ -293,8 +293,8 @@ public class Interface extends javax.swing.JFrame {
                 .addGap(94, 94, 94)
                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jSlider13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
-            .addComponent(jSlider14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Ag1Slider, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
+            .addComponent(Ag2Slider, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -304,36 +304,36 @@ public class Interface extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jSlider13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Ag1Slider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(jSlider14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Ag2Slider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50))
         );
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jSlider1.setMajorTickSpacing(10);
-        jSlider1.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider1.setPaintLabels(true);
-        jSlider1.setPaintTicks(true);
-        jSlider1.setSnapToTicks(true);
-        jSlider1.setValue(0);
+        P1SliderP.setMajorTickSpacing(10);
+        P1SliderP.setOrientation(javax.swing.JSlider.VERTICAL);
+        P1SliderP.setPaintLabels(true);
+        P1SliderP.setPaintTicks(true);
+        P1SliderP.setSnapToTicks(true);
+        P1SliderP.setValue(0);
 
-        jSlider2.setMajorTickSpacing(10);
-        jSlider2.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider2.setPaintLabels(true);
-        jSlider2.setPaintTicks(true);
-        jSlider2.setSnapToTicks(true);
-        jSlider2.setValue(0);
+        P1SliderV.setMajorTickSpacing(10);
+        P1SliderV.setOrientation(javax.swing.JSlider.VERTICAL);
+        P1SliderV.setPaintLabels(true);
+        P1SliderV.setPaintTicks(true);
+        P1SliderV.setSnapToTicks(true);
+        P1SliderV.setValue(0);
 
-        jSlider3.setMajorTickSpacing(10);
-        jSlider3.setOrientation(javax.swing.JSlider.VERTICAL);
-        jSlider3.setPaintLabels(true);
-        jSlider3.setPaintTicks(true);
-        jSlider3.setSnapToTicks(true);
-        jSlider3.setValue(0);
+        P1SliderO.setMajorTickSpacing(10);
+        P1SliderO.setOrientation(javax.swing.JSlider.VERTICAL);
+        P1SliderO.setPaintLabels(true);
+        P1SliderO.setPaintTicks(true);
+        P1SliderO.setSnapToTicks(true);
+        P1SliderO.setValue(0);
 
         jLabel1.setText("Produtor de Lixo 1 - KG");
 
@@ -350,11 +350,11 @@ public class Interface extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P1SliderP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jSlider3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P1SliderO, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(P1SliderV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(61, 61, 61)
                         .addComponent(jLabel1)))
@@ -368,9 +368,9 @@ public class Interface extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jSlider3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(P1SliderO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P1SliderV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P1SliderP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addGap(13, 13, 13))
@@ -472,6 +472,20 @@ public class Interface extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JSlider Ag1Slider;
+    private javax.swing.JSlider Ag2Slider;
+    private javax.swing.JSlider LixoSliderO;
+    private javax.swing.JSlider LixoSliderP;
+    private javax.swing.JSlider LixoSliderV;
+    private javax.swing.JSlider P1SliderO;
+    private javax.swing.JSlider P1SliderP;
+    private javax.swing.JSlider P1SliderV;
+    private javax.swing.JSlider P2SliderO;
+    private javax.swing.JSlider P2SliderP;
+    private javax.swing.JSlider P2SliderV;
+    private javax.swing.JSlider P3SliderO;
+    private javax.swing.JSlider P3SliderP;
+    private javax.swing.JSlider P3SliderV;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -491,20 +505,6 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSlider jSlider1;
-    private javax.swing.JSlider jSlider10;
-    private javax.swing.JSlider jSlider11;
-    private javax.swing.JSlider jSlider12;
-    private javax.swing.JSlider jSlider13;
-    private javax.swing.JSlider jSlider14;
-    private javax.swing.JSlider jSlider2;
-    private javax.swing.JSlider jSlider3;
-    private javax.swing.JSlider jSlider4;
-    private javax.swing.JSlider jSlider5;
-    private javax.swing.JSlider jSlider6;
-    private javax.swing.JSlider jSlider7;
-    private javax.swing.JSlider jSlider8;
-    private javax.swing.JSlider jSlider9;
     private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

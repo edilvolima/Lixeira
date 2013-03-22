@@ -99,11 +99,11 @@
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                       <Component id="jLabel6" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Component id="jSlider5" min="-2" max="-2" attributes="0"/>
+                          <Component id="P2SliderP" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jSlider4" min="-2" max="-2" attributes="0"/>
+                          <Component id="P2SliderO" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jSlider6" min="-2" max="-2" attributes="0"/>
+                          <Component id="P2SliderV" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
@@ -122,9 +122,9 @@
                   <Component id="jLabel2" min="-2" pref="21" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jSlider4" min="-2" max="-2" attributes="0"/>
-                      <Component id="jSlider5" min="-2" pref="200" max="-2" attributes="0"/>
-                      <Component id="jSlider6" min="-2" max="-2" attributes="0"/>
+                      <Component id="P2SliderO" min="-2" max="-2" attributes="0"/>
+                      <Component id="P2SliderP" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Component id="P2SliderV" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
@@ -134,7 +134,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSlider" name="jSlider4">
+        <Component class="javax.swing.JSlider" name="P2SliderO">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -144,7 +144,7 @@
             <Property name="value" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider5">
+        <Component class="javax.swing.JSlider" name="P2SliderP">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -154,7 +154,7 @@
             <Property name="value" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider6">
+        <Component class="javax.swing.JSlider" name="P2SliderV">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -195,11 +195,11 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jLabel7" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Component id="jSlider8" min="-2" max="-2" attributes="0"/>
+                                  <Component id="P3SliderP" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jSlider7" min="-2" max="-2" attributes="0"/>
+                                  <Component id="P3SliderO" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jSlider9" min="-2" max="-2" attributes="0"/>
+                                  <Component id="P3SliderV" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -220,13 +220,13 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="jSlider7" min="-2" max="-2" attributes="0"/>
+                          <Component id="P3SliderO" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jSlider9" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jSlider8" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="P3SliderV" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="P3SliderP" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -238,7 +238,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSlider" name="jSlider7">
+        <Component class="javax.swing.JSlider" name="P3SliderO">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -248,7 +248,7 @@
             <Property name="value" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider8">
+        <Component class="javax.swing.JSlider" name="P3SliderP">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -258,7 +258,7 @@
             <Property name="value" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider9">
+        <Component class="javax.swing.JSlider" name="P3SliderV">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -301,11 +301,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel10" min="-2" pref="179" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Component id="jSlider10" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LixoSliderP" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                  <Component id="jSlider11" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LixoSliderO" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jSlider12" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LixoSliderV" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -321,9 +321,9 @@
                   <Component id="jLabel4" min="-2" pref="37" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" max="-2" attributes="0">
-                      <Component id="jSlider11" alignment="3" pref="0" max="32767" attributes="0"/>
-                      <Component id="jSlider10" alignment="3" pref="0" max="32767" attributes="0"/>
-                      <Component id="jSlider12" alignment="3" min="-2" pref="150" max="-2" attributes="0"/>
+                      <Component id="LixoSliderO" alignment="3" pref="0" max="32767" attributes="0"/>
+                      <Component id="LixoSliderP" alignment="3" pref="0" max="32767" attributes="0"/>
+                      <Component id="LixoSliderV" alignment="3" min="-2" pref="150" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
@@ -333,7 +333,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSlider" name="jSlider10">
+        <Component class="javax.swing.JSlider" name="LixoSliderP">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -343,7 +343,7 @@
             <Property name="value" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider11">
+        <Component class="javax.swing.JSlider" name="LixoSliderO">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -353,7 +353,7 @@
             <Property name="value" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider12">
+        <Component class="javax.swing.JSlider" name="LixoSliderV">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -404,8 +404,8 @@
                   <Component id="jLabel13" min="-2" pref="56" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
-              <Component id="jSlider13" alignment="1" pref="298" max="32767" attributes="0"/>
-              <Component id="jSlider14" alignment="0" max="32767" attributes="0"/>
+              <Component id="Ag1Slider" alignment="1" pref="298" max="32767" attributes="0"/>
+              <Component id="Ag2Slider" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -416,18 +416,18 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jLabel12" min="-2" pref="24" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jSlider13" min="-2" max="-2" attributes="0"/>
+                  <Component id="Ag1Slider" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jLabel13" max="32767" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jSlider14" min="-2" max="-2" attributes="0"/>
+                  <Component id="Ag2Slider" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSlider" name="jSlider13">
+        <Component class="javax.swing.JSlider" name="Ag1Slider">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="1"/>
             <Property name="maximum" type="int" value="20"/>
@@ -437,7 +437,7 @@
             <Property name="value" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider14">
+        <Component class="javax.swing.JSlider" name="Ag2Slider">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="1"/>
             <Property name="maximum" type="int" value="20"/>
@@ -483,11 +483,11 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jLabel5" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Component id="jSlider1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="P1SliderP" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jSlider3" min="-2" pref="51" max="-2" attributes="0"/>
+                                  <Component id="P1SliderO" min="-2" pref="51" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jSlider2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="P1SliderV" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -508,10 +508,10 @@
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jSlider3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jSlider2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="P1SliderO" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="P1SliderV" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jSlider1" min="-2" max="-2" attributes="0"/>
+                      <Component id="P1SliderP" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
@@ -521,7 +521,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSlider" name="jSlider1">
+        <Component class="javax.swing.JSlider" name="P1SliderP">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -531,7 +531,7 @@
             <Property name="value" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider2">
+        <Component class="javax.swing.JSlider" name="P1SliderV">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
@@ -541,7 +541,7 @@
             <Property name="value" type="int" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider3">
+        <Component class="javax.swing.JSlider" name="P1SliderO">
           <Properties>
             <Property name="majorTickSpacing" type="int" value="10"/>
             <Property name="orientation" type="int" value="1"/>
