@@ -4,17 +4,31 @@
  */
 package lixoint;
 
+import context.arch.discoverer.Discoverer;
+import context.arch.enactor.Enactor;
+import context.arch.enactor.EnactorXmlParser;
+import context.arch.widget.Widget;
+import context.arch.widget.WidgetXmlParser;
+
 /**
  *
  * @author Pedro
  */
 public class Interface extends javax.swing.JFrame {
-
+    /**
+     *Widgets Lixo e Agente!
+     */
+    protected Widget widgetLixo;
+    protected Widget widgetAgente;
+    protected Enactor enactorLixo;
     /**
      * Creates new form Interface
      */
     public Interface() {
         initComponents();
+        widgetAgente = WidgetXmlParser.createWidget("arc/lixoint/Widget-Agente.xml");
+        widgetLixo = WidgetXmlParser.createWidget("src/lixoint/Widget-Lixeira.xml");
+        enactorLixo = EnactorXmlParser.createEnactor("src/lixoint/Enactor-Lixo.xml");
     }
 
     /**
