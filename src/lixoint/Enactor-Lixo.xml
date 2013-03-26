@@ -1,8 +1,0 @@
-	<?xml version="1.0" encoding="UTF-8"?>
--<Widget name="Widgetprodutor1" xmlns="http://www.contexttoolkit.org/ctk">
-	-<Attributes>
-		<Attribute name="plastico" type="int"/>
-		<Attribute name="oleo" type="int"/>
-		<Attribute name="vidro" type="int"/>
-	</Attributes>
-</Widget>

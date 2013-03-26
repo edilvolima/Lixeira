@@ -4,7 +4,7 @@
  */
 package lixoint;
 
-import context.arch.discoverer.Discoverer;
+
 import context.arch.enactor.Enactor;
 import context.arch.enactor.EnactorXmlParser;
 import context.arch.widget.Widget;
@@ -14,21 +14,18 @@ import context.arch.widget.WidgetXmlParser;
  *
  * @author Pedro
  */
-public class Interface extends javax.swing.JFrame {
+public class Lixeira extends javax.swing.JFrame {
     /**
      *Widgets Lixo e Agente!
      */
     protected Widget widgetLixo;
-    protected Widget widgetAgente;
-    protected Enactor enactorLixo;
     /**
      * Creates new form Interface
      */
-    public Interface() {
+    public Lixeira() {
         initComponents();
-        widgetAgente = WidgetXmlParser.createWidget("arc/lixoint/Widget-Agente.xml");
         widgetLixo = WidgetXmlParser.createWidget("src/lixoint/Widget-Lixeira.xml");
-        enactorLixo = EnactorXmlParser.createEnactor("src/lixoint/Enactor-Lixo.xml");
+
     }
 
     /**
@@ -468,20 +465,20 @@ public class Interface extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Lixeira.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Lixeira.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Lixeira.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Lixeira.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Interface().setVisible(true);
+                new Lixeira().setVisible(true);
             }
         });
     }

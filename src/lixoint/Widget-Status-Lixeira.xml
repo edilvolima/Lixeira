@@ -1,8 +1,8 @@
 	<?xml version="1.0" encoding="UTF-8"?>
 -<Widget name="WidgetLixo" xmlns="http://www.contexttoolkit.org/ctk">
 	-<Attributes>
-		<Attribute name="quantPlastico" type="int"/>
-		<Attribute name="quantOleo" type="int"/>
-		<Attribute name="quantVidro" type="int"/>
+		<Attribute name="statusPlastico" type="string"/>
+		<Attribute name="statusOleo" type="string"/>
+		<Attribute name="statusVidro" type="string"/>
 	</Attributes>
 </Widget>
