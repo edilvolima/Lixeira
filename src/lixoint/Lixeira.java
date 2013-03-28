@@ -4,7 +4,7 @@
  */
 package lixoint;
 
-
+import context.arch.discoverer.Discoverer;
 import context.arch.enactor.Enactor;
 import context.arch.enactor.EnactorXmlParser;
 import context.arch.widget.Widget;
@@ -19,12 +19,25 @@ public class Lixeira extends javax.swing.JFrame {
      *Widgets Lixo e Agente!
      */
     protected Widget widgetLixo;
+    protected Widget widgetAgente;
+    protected Widget widgetStatus;
+    protected Servico Servico;//Fazer uma classe!
+    protected Enactor Enactor;
     /**
      * Creates new form Interface
      */
+    public double Lixeiraplastico, Lixeiraoleo, Lixeiravidro;//O máximo será 250kg!
+    public double Lixeiraplastico2, Lixeiraoleo2, Lixeiravidro2;
+    public double Lixeiraplastico3, Lixeiraoleo3, Lixeiravidro3;
+    public double totalPlastico, totalOleo, totalVidro;
+    
     public Lixeira() {
         initComponents();
         widgetLixo = WidgetXmlParser.createWidget("src/lixoint/Widget-Lixeira.xml");
+        widgetStatus = WidgetXmlParser.createWidget("src/lixoint/Widget-Status-Lixeira.xml");
+        widgetAgente = WidgetXmlParser.createWidget("src/lixoint/Widget-Agente.xml");
+
+        
 
     }
 
@@ -81,22 +94,34 @@ public class Lixeira extends javax.swing.JFrame {
         P2SliderO.setOrientation(javax.swing.JSlider.VERTICAL);
         P2SliderO.setPaintLabels(true);
         P2SliderO.setPaintTicks(true);
-        P2SliderO.setSnapToTicks(true);
         P2SliderO.setValue(0);
+        P2SliderO.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                P2SliderOStateChanged(evt);
+            }
+        });
 
         P2SliderP.setMajorTickSpacing(10);
         P2SliderP.setOrientation(javax.swing.JSlider.VERTICAL);
         P2SliderP.setPaintLabels(true);
         P2SliderP.setPaintTicks(true);
-        P2SliderP.setSnapToTicks(true);
         P2SliderP.setValue(0);
+        P2SliderP.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                P2SliderPStateChanged(evt);
+            }
+        });
 
         P2SliderV.setMajorTickSpacing(10);
         P2SliderV.setOrientation(javax.swing.JSlider.VERTICAL);
         P2SliderV.setPaintLabels(true);
         P2SliderV.setPaintTicks(true);
-        P2SliderV.setSnapToTicks(true);
         P2SliderV.setValue(0);
+        P2SliderV.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                P2SliderVStateChanged(evt);
+            }
+        });
 
         jLabel2.setText("Produtor de Lixo 2 - KG");
 
@@ -143,22 +168,34 @@ public class Lixeira extends javax.swing.JFrame {
         P3SliderO.setOrientation(javax.swing.JSlider.VERTICAL);
         P3SliderO.setPaintLabels(true);
         P3SliderO.setPaintTicks(true);
-        P3SliderO.setSnapToTicks(true);
         P3SliderO.setValue(0);
+        P3SliderO.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                P3SliderOStateChanged(evt);
+            }
+        });
 
         P3SliderP.setMajorTickSpacing(10);
         P3SliderP.setOrientation(javax.swing.JSlider.VERTICAL);
         P3SliderP.setPaintLabels(true);
         P3SliderP.setPaintTicks(true);
-        P3SliderP.setSnapToTicks(true);
         P3SliderP.setValue(0);
+        P3SliderP.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                P3SliderPStateChanged(evt);
+            }
+        });
 
         P3SliderV.setMajorTickSpacing(10);
         P3SliderV.setOrientation(javax.swing.JSlider.VERTICAL);
         P3SliderV.setPaintLabels(true);
         P3SliderV.setPaintTicks(true);
-        P3SliderV.setSnapToTicks(true);
         P3SliderV.setValue(0);
+        P3SliderV.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                P3SliderVStateChanged(evt);
+            }
+        });
 
         jLabel3.setText("Produtor de Lixo 3 - KG");
 
@@ -210,22 +247,34 @@ public class Lixeira extends javax.swing.JFrame {
         LixoSliderP.setOrientation(javax.swing.JSlider.VERTICAL);
         LixoSliderP.setPaintLabels(true);
         LixoSliderP.setPaintTicks(true);
-        LixoSliderP.setSnapToTicks(true);
         LixoSliderP.setValue(0);
+        LixoSliderP.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                LixoSliderPStateChanged(evt);
+            }
+        });
 
         LixoSliderO.setMajorTickSpacing(10);
         LixoSliderO.setOrientation(javax.swing.JSlider.VERTICAL);
         LixoSliderO.setPaintLabels(true);
         LixoSliderO.setPaintTicks(true);
-        LixoSliderO.setSnapToTicks(true);
         LixoSliderO.setValue(0);
+        LixoSliderO.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                LixoSliderOStateChanged(evt);
+            }
+        });
 
         LixoSliderV.setMajorTickSpacing(10);
         LixoSliderV.setOrientation(javax.swing.JSlider.VERTICAL);
         LixoSliderV.setPaintLabels(true);
         LixoSliderV.setPaintTicks(true);
-        LixoSliderV.setSnapToTicks(true);
         LixoSliderV.setValue(0);
+        LixoSliderV.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                LixoSliderVStateChanged(evt);
+            }
+        });
 
         jLabel4.setText("Lixeiras - Quantidade em porcentagem");
 
@@ -329,22 +378,34 @@ public class Lixeira extends javax.swing.JFrame {
         P1SliderP.setOrientation(javax.swing.JSlider.VERTICAL);
         P1SliderP.setPaintLabels(true);
         P1SliderP.setPaintTicks(true);
-        P1SliderP.setSnapToTicks(true);
         P1SliderP.setValue(0);
+        P1SliderP.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                P1SliderPStateChanged(evt);
+            }
+        });
 
         P1SliderV.setMajorTickSpacing(10);
         P1SliderV.setOrientation(javax.swing.JSlider.VERTICAL);
         P1SliderV.setPaintLabels(true);
         P1SliderV.setPaintTicks(true);
-        P1SliderV.setSnapToTicks(true);
         P1SliderV.setValue(0);
+        P1SliderV.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                P1SliderVStateChanged(evt);
+            }
+        });
 
         P1SliderO.setMajorTickSpacing(10);
         P1SliderO.setOrientation(javax.swing.JSlider.VERTICAL);
         P1SliderO.setPaintLabels(true);
         P1SliderO.setPaintTicks(true);
-        P1SliderO.setSnapToTicks(true);
         P1SliderO.setValue(0);
+        P1SliderO.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                P1SliderOStateChanged(evt);
+            }
+        });
 
         jLabel1.setText("Produtor de Lixo 1 - KG");
 
@@ -447,6 +508,82 @@ public class Lixeira extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void P1SliderPStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P1SliderPStateChanged
+        Lixeiraplastico = (int)P1SliderP.getValue();
+        Lixeiraplastico = Lixeiraplastico / 2.5;
+        totalPlastico += Lixeiraplastico;
+        widgetLixo.updateData("quantPlastico", totalPlastico);
+    }//GEN-LAST:event_P1SliderPStateChanged
+
+    private void P1SliderOStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P1SliderOStateChanged
+        Lixeiraoleo = (int)P1SliderO.getValue();
+        Lixeiraoleo = Lixeiraoleo / 2.5;
+        totalOleo += Lixeiraoleo;
+        widgetLixo.updateData("quantOleo", totalOleo);
+    }//GEN-LAST:event_P1SliderOStateChanged
+
+    private void P1SliderVStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P1SliderVStateChanged
+        Lixeiravidro = (int)P1SliderV.getValue();
+        totalVidro = Lixeiravidro / 2.5;
+        totalVidro += Lixeiravidro;
+        widgetLixo.updateData("quantVidro", totalVidro);
+    }//GEN-LAST:event_P1SliderVStateChanged
+
+    private void P2SliderPStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P2SliderPStateChanged
+        Lixeiraplastico2 = (int)P2SliderP.getValue();
+        Lixeiraplastico2 = Lixeiraplastico2 / 2.5;
+        totalPlastico += Lixeiraplastico;
+        widgetLixo.updateData("quantPlastico", totalPlastico);
+    }//GEN-LAST:event_P2SliderPStateChanged
+
+    private void P2SliderOStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P2SliderOStateChanged
+        Lixeiraoleo2 = (int)P2SliderO.getValue();
+        Lixeiraoleo2 = Lixeiraoleo2 / 2.5;
+        totalOleo += Lixeiraoleo2;
+        widgetLixo.updateData("quantOleo", totalOleo);
+    }//GEN-LAST:event_P2SliderOStateChanged
+
+    private void P2SliderVStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P2SliderVStateChanged
+        Lixeiravidro2 = (int)P2SliderV.getValue();
+        Lixeiravidro2 = Lixeiravidro2 / 2.5;
+        totalVidro += Lixeiravidro2;
+        widgetLixo.updateData("quantVidro", totalVidro);
+    }//GEN-LAST:event_P2SliderVStateChanged
+
+    private void P3SliderPStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P3SliderPStateChanged
+        Lixeiraplastico3 = (int)P3SliderV.getValue();
+        Lixeiraplastico3 = Lixeiraplastico3 / 2.5;
+        totalPlastico += Lixeiraplastico3;
+        widgetLixo.updateData("quantPlastico", totalPlastico);
+    }//GEN-LAST:event_P3SliderPStateChanged
+
+    private void P3SliderOStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P3SliderOStateChanged
+        Lixeiraoleo3 = (int)P3SliderV.getValue();
+        Lixeiraoleo3 = Lixeiraoleo3 / 2.5;
+        totalOleo += Lixeiraoleo3;
+        widgetLixo.updateData("quantVidro", totalOleo);
+    }//GEN-LAST:event_P3SliderOStateChanged
+
+    private void P3SliderVStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P3SliderVStateChanged
+        Lixeiravidro3 = (int)P3SliderV.getValue();
+        Lixeiravidro3 = Lixeiravidro3 / 2.5;
+        totalVidro += Lixeiravidro3;
+        widgetLixo.updateData("quantVidro", totalVidro);
+    }//GEN-LAST:event_P3SliderVStateChanged
+
+    private void LixoSliderPStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_LixoSliderPStateChanged
+        LixoSliderP.setValue((int)totalPlastico);
+        
+    }//GEN-LAST:event_LixoSliderPStateChanged
+
+    private void LixoSliderOStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_LixoSliderOStateChanged
+        LixoSliderO.setValue((int)totalOleo);
+    }//GEN-LAST:event_LixoSliderOStateChanged
+
+    private void LixoSliderVStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_LixoSliderVStateChanged
+        LixoSliderV.setValue((int)totalVidro);
+    }//GEN-LAST:event_LixoSliderVStateChanged
 
     /**
      * @param args the command line arguments
