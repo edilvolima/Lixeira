@@ -253,6 +253,7 @@ public class Lixeira extends javax.swing.JFrame {
 
         LixoSliderP.setMajorTickSpacing(20);
         LixoSliderP.setMaximum(200);
+        LixoSliderP.setMinorTickSpacing(10);
         LixoSliderP.setOrientation(javax.swing.JSlider.VERTICAL);
         LixoSliderP.setPaintLabels(true);
         LixoSliderP.setPaintTicks(true);
@@ -275,6 +276,7 @@ public class Lixeira extends javax.swing.JFrame {
 
         LixoSliderO.setMajorTickSpacing(20);
         LixoSliderO.setMaximum(200);
+        LixoSliderO.setMinorTickSpacing(10);
         LixoSliderO.setOrientation(javax.swing.JSlider.VERTICAL);
         LixoSliderO.setPaintLabels(true);
         LixoSliderO.setPaintTicks(true);
@@ -288,6 +290,7 @@ public class Lixeira extends javax.swing.JFrame {
 
         LixoSliderV.setMajorTickSpacing(20);
         LixoSliderV.setMaximum(200);
+        LixoSliderV.setMinorTickSpacing(10);
         LixoSliderV.setOrientation(javax.swing.JSlider.VERTICAL);
         LixoSliderV.setPaintLabels(true);
         LixoSliderV.setPaintTicks(true);
