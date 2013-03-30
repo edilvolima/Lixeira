@@ -26,9 +26,7 @@ public class Lixeira extends javax.swing.JFrame {
     /**
      * Creates new form Interface
      */
-    public int Lixeiraplastico, Lixeiraoleo, Lixeiravidro;//O máximo será 100kg!
-    public int Lixeiraplastico2, Lixeiraoleo2, Lixeiravidro2;
-    public int Lixeiraplastico3, Lixeiraoleo3, Lixeiravidro3;
+    
     public int totalPlastico;
     public int totalOleo;
     public int totalVidro;
@@ -251,14 +249,15 @@ public class Lixeira extends javax.swing.JFrame {
 
         jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        LixoSliderP.setMajorTickSpacing(20);
-        LixoSliderP.setMaximum(200);
+        LixoSliderP.setMajorTickSpacing(50);
+        LixoSliderP.setMaximum(250);
         LixoSliderP.setMinorTickSpacing(10);
         LixoSliderP.setOrientation(javax.swing.JSlider.VERTICAL);
         LixoSliderP.setPaintLabels(true);
         LixoSliderP.setPaintTicks(true);
         LixoSliderP.setSnapToTicks(true);
         LixoSliderP.setValue(0);
+        LixoSliderP.setEnabled(false);
         LixoSliderP.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 LixoSliderPStateChanged(evt);
@@ -274,28 +273,30 @@ public class Lixeira extends javax.swing.JFrame {
             }
         });
 
-        LixoSliderO.setMajorTickSpacing(20);
-        LixoSliderO.setMaximum(200);
+        LixoSliderO.setMajorTickSpacing(50);
+        LixoSliderO.setMaximum(250);
         LixoSliderO.setMinorTickSpacing(10);
         LixoSliderO.setOrientation(javax.swing.JSlider.VERTICAL);
         LixoSliderO.setPaintLabels(true);
         LixoSliderO.setPaintTicks(true);
         LixoSliderO.setSnapToTicks(true);
         LixoSliderO.setValue(0);
+        LixoSliderO.setEnabled(false);
         LixoSliderO.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 LixoSliderOStateChanged(evt);
             }
         });
 
-        LixoSliderV.setMajorTickSpacing(20);
-        LixoSliderV.setMaximum(200);
+        LixoSliderV.setMajorTickSpacing(50);
+        LixoSliderV.setMaximum(250);
         LixoSliderV.setMinorTickSpacing(10);
         LixoSliderV.setOrientation(javax.swing.JSlider.VERTICAL);
         LixoSliderV.setPaintLabels(true);
         LixoSliderV.setPaintTicks(true);
         LixoSliderV.setSnapToTicks(true);
         LixoSliderV.setValue(0);
+        LixoSliderV.setEnabled(false);
         LixoSliderV.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 LixoSliderVStateChanged(evt);
@@ -539,55 +540,55 @@ public class Lixeira extends javax.swing.JFrame {
 
     private void P1SliderPStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P1SliderPStateChanged
         LixoSliderP.setValue(P1SliderP.getValue() + P2SliderP.getValue() + P3SliderP.getValue());
-        Lixeiraplastico = P1SliderP.getValue();
+        totalPlastico = P1SliderP.getValue() + P2SliderP.getValue() + P3SliderP.getValue();
         widgetLixo.updateData("quantPlastico", totalPlastico);
     }//GEN-LAST:event_P1SliderPStateChanged
 
     private void P1SliderOStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P1SliderOStateChanged
         LixoSliderO.setValue(P1SliderO.getValue() + P2SliderO.getValue() + P3SliderO.getValue());
-        Lixeiraoleo = P1SliderO.getValue();
+        totalOleo = P1SliderO.getValue() + P2SliderO.getValue() + P3SliderO.getValue();
         widgetLixo.updateData("quantOleo", totalOleo);
     }//GEN-LAST:event_P1SliderOStateChanged
 
     private void P1SliderVStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P1SliderVStateChanged
         LixoSliderV.setValue(P1SliderV.getValue() + P2SliderV.getValue() + P3SliderV.getValue());
-        Lixeiravidro = P1SliderV.getValue();
+        totalVidro = P1SliderV.getValue() + P2SliderV.getValue() + P3SliderV.getValue();
         widgetLixo.updateData("quantVidro", totalVidro);
     }//GEN-LAST:event_P1SliderVStateChanged
 
     private void P2SliderPStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P2SliderPStateChanged
         LixoSliderP.setValue(P1SliderP.getValue() + P2SliderP.getValue() + P3SliderP.getValue());
-        Lixeiraplastico2 = P2SliderP.getValue();
+        totalPlastico = P1SliderP.getValue() + P2SliderP.getValue() + P3SliderP.getValue();
         widgetLixo.updateData("quantPlastico", totalPlastico);
     }//GEN-LAST:event_P2SliderPStateChanged
 
     private void P2SliderOStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P2SliderOStateChanged
         LixoSliderO.setValue(P1SliderO.getValue() + P2SliderO.getValue() + P3SliderO.getValue());
-        Lixeiraoleo2 = P2SliderO.getValue();
+        totalOleo = P1SliderO.getValue() + P2SliderO.getValue() + P3SliderO.getValue();
         widgetLixo.updateData("quantOleo", totalOleo);
     }//GEN-LAST:event_P2SliderOStateChanged
 
     private void P2SliderVStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P2SliderVStateChanged
         LixoSliderV.setValue(P1SliderV.getValue() + P2SliderV.getValue() + P3SliderV.getValue());
-        Lixeiravidro2 = P2SliderV.getValue();
+        totalVidro = P1SliderO.getValue() + P2SliderO.getValue() + P3SliderO.getValue();
         widgetLixo.updateData("quantVidro", totalVidro);
     }//GEN-LAST:event_P2SliderVStateChanged
 
     private void P3SliderPStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P3SliderPStateChanged
         LixoSliderP.setValue(P1SliderP.getValue() + P2SliderP.getValue() + P3SliderP.getValue());
-        Lixeiraplastico3 = P3SliderV.getValue();
+        totalPlastico = P1SliderP.getValue() + P2SliderP.getValue() + P3SliderP.getValue();
         widgetLixo.updateData("quantPlastico", totalPlastico);
     }//GEN-LAST:event_P3SliderPStateChanged
 
     private void P3SliderOStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P3SliderOStateChanged
         LixoSliderO.setValue(P1SliderO.getValue() + P2SliderO.getValue() + P3SliderO.getValue());
-        Lixeiraoleo3 = P3SliderO.getValue();
-        widgetLixo.updateData("quantVidro", totalOleo);
+        totalOleo = P1SliderO.getValue() + P2SliderO.getValue() + P3SliderO.getValue();
+        widgetLixo.updateData("quantOleo", totalOleo);
     }//GEN-LAST:event_P3SliderOStateChanged
 
     private void P3SliderVStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_P3SliderVStateChanged
         LixoSliderV.setValue(P1SliderV.getValue() + P2SliderV.getValue() + P3SliderV.getValue());
-        Lixeiravidro3 = P3SliderV.getValue();
+        totalVidro = P1SliderV.getValue() + P2SliderV.getValue() + P3SliderV.getValue();
         widgetLixo.updateData("quantVidro", totalVidro);
     }//GEN-LAST:event_P3SliderVStateChanged
 
