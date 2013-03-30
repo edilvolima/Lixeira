@@ -635,6 +635,7 @@ public class Lixeira extends javax.swing.JFrame {
         }
         //</editor-fold>
 
+        Discoverer.start();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -678,4 +679,25 @@ public class Lixeira extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
+
+    
+    // Metodos do Status Service
+    public void setStatusPlastico(String status){
+        jTextArea1.setText("");
+    }
+    
+    public void setStatusOleo(String status){
+    
+    }
+    
+    public void setStatusVidro(String status){
+    
+    }
+    
+    //Impressão das mensagens do que a aplicação está fazendo
+    public void printMensagem(int mensagem){
+        jTextArea1.setText("");
+    }
+    
+    
 }
