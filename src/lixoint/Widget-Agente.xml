@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+	<?xml version="1.0" encoding="UTF-8"?>
 <Widget name="WidgetaAgente" xmlns="http://www.contexttoolkit.org/ctk">
 	<Attributes>
 		<Attribute name="distancia1" type="int"/>

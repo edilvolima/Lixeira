@@ -21,7 +21,6 @@ public class Lixeira extends javax.swing.JFrame {
     protected Widget widgetLixo;
     protected Widget widgetAgente;
     protected Widget widgetStatus;
-    protected Servico Servico;//Fazer uma classe!
     protected Enactor Enactor;
     /**
      * Creates new form Interface
