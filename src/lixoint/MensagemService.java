@@ -51,12 +51,12 @@ public class MensagemService extends Service {
 		String functionName = serviceInput.getFunctionName();
 		
 		if (functionName.equals(LIMITE)) {
-			int mensagem = serviceInput.getInput().getAttributeValue("mensagem");
+			Integer mensagem = serviceInput.getInput().getAttributeValue("mensagem");
                         application.printMensagem(mensagem);
 		}
 		
 		else if (functionName.equals(AGENTE)) {
-                        int mensagem = serviceInput.getInput().getAttributeValue("mensagem");	
+                        Integer mensagem = serviceInput.getInput().getAttributeValue("mensagem");	
                         application.printMensagem(mensagem);
 		}
                 

@@ -48,7 +48,7 @@ public class Lixeira extends javax.swing.JFrame {
         /*
 	* Widget que mostra o status da lixeira e service
 	*/
-        widgetStatusLixeira = WidgetXmlParser.createWidget("src/lixoint/Widget-Status.Lixeira.xml");
+        widgetStatusLixeira = WidgetXmlParser.createWidget("src/lixoint/Widget-Status-Lixeira.xml");
         statusService = new StatusService(widgetStatusLixeira, this);
         widgetStatusLixeira.addService(statusService);
         
