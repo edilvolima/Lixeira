@@ -15,13 +15,20 @@ import context.arch.widget.WidgetXmlParser;
  * @author Pedro
  */
 public class Lixeira extends javax.swing.JFrame {
-    /**
+     /**
      *Widgets Lixo e Agente!
      */
     protected Widget widgetLixo;
+    protected Widget widgetStatusLixeira;
     protected Widget widgetAgente;
-    protected Widget widgetStatus;
-    protected Enactor Enactor;
+    protected Widget widgetTela;
+    
+    protected Enactor enactorStatus;
+    protected Enactor enactorColeta;
+    
+    protected StatusService statusService;
+    protected MensagemService mensagemService;
+    
     /**
      * Creates new form Interface
      */
@@ -31,12 +38,28 @@ public class Lixeira extends javax.swing.JFrame {
     public int totalVidro;
     
     public Lixeira() {
+        super();
         initComponents();
+        /*
+	* Widget Sensor de quantidade de lixo da lixeira
+	*/
         widgetLixo = WidgetXmlParser.createWidget("src/lixoint/Widget-Lixeira.xml");
-        widgetStatus = WidgetXmlParser.createWidget("src/lixoint/Widget-Status-Lixeira.xml");
         widgetAgente = WidgetXmlParser.createWidget("src/lixoint/Widget-Agente.xml");
-
+        /*
+	* Widget que mostra o status da lixeira e service
+	*/
+        widgetStatusLixeira = WidgetXmlParser.createWidget("src/lixoint/Widget-Status.Lixeira.xml");
+        statusService = new StatusService(widgetStatusLixeira, this);
+        widgetStatusLixeira.addService(statusService);
         
+        widgetTela = WidgetXmlParser.createWidget("src/lixoint/Widget-Tela.xml");
+        mensagemService = new MensagemService(widgetTela, this);
+        widgetTela.addService(mensagemService);
+         /*
+	* Enactors
+	*/
+        enactorStatus = EnactorXmlParser.createEnactor("src/lixoint/Enactor-Status.xml");
+        enactorColeta = EnactorXmlParser.createEnactor("src/lixoint/Enactor-Coleta.xml");        
 
     }
 
