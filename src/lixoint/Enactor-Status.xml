@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <!--status do oleo -->
-<Enactor name="RoomEnactor" xmlns="http://www.contexttoolkit.org/ctk">
+<Enactor name="EnactorStatus" xmlns="http://www.contexttoolkit.org/ctk">
     <InWidget href="Widget-Lixeira.xml"/>
     <OutWidget href="Widget-Status-Lixeira.xml"/>
     
+      <!--status do plastico -->
+    
     <OutcomeName>status</OutcomeName>
-    <Reference name="Plasticovazio">
+    <Reference name="PlasticoVazio">
         <Query name="lixeiraPlasticoVazia"> 
             (
               (EQUAL quantPlastico 0) 
             ) 
         </Query>
         <Outcome outAttribute="status">"Vazio"</Outcome>
-        <ServiceInput function="statusControlePlastico" service="statusService">
+        <ServiceInput service="StatusService" function="statusControlePlastico">
             <Attribute name="status"/>
         </ServiceInput>
         
@@ -25,7 +26,7 @@
             ) 
         </Query>
         <Outcome outAttribute="status">"Enchendo"</Outcome>
-        <ServiceInput function="statusControlePlastico" service="StatusService">
+        <ServiceInput service="StatusService" function="statusControlePlastico">
             <Attribute name="status"/>
         </ServiceInput>
         
@@ -36,8 +37,8 @@
                 (EQUAL quantPlastico 250)
             ) 
         </Query>
-        <Outcome outAttribute="status"> "Cheia" </Outcome>
-        <ServiceInput function="statusControlePlastico" service="StatusService">
+        <Outcome outAttribute="status">"Cheia"</Outcome>
+        <ServiceInput service="StatusService" function="statusControlePlastico">
             <Attribute name="status"/>
         </ServiceInput>
     </Reference>
@@ -51,7 +52,7 @@
             ) 
         </Query>
         <Outcome outAttribute="status">"Vazio"</Outcome>
-        <ServiceInput function="statusControleOleo" service="statusService">
+        <ServiceInput service="StatusService" function="statusControleOleo">
             <Attribute name="status"/>
         </ServiceInput>
         
@@ -63,8 +64,8 @@
                 (LESS quantOleo 250)
             ) 
         </Query>
-        <Outcome outAttribute="status"> "Enchendo" </Outcome>
-        <ServiceInput function="statusControleOleo" service="StatusService">
+        <Outcome outAttribute="status">"Enchendo"</Outcome>
+        <ServiceInput service="StatusService" function="statusControleOleo">
             <Attribute name="status"/>
         </ServiceInput>
         
@@ -75,8 +76,8 @@
                  (EQUAL quantOleo 250)
             ) 
         </Query>
-        <Outcome outAttribute="status"> "Cheia" </Outcome>
-        <ServiceInput function="statusControleOleo" service="StatusService">
+        <Outcome outAttribute="status">"Cheia"</Outcome>
+        <ServiceInput service="StatusService" function="statusControleOleo">
             <Attribute name="status"/>
         </ServiceInput>
     </Reference>
@@ -90,7 +91,7 @@
             ) 
         </Query>
         <Outcome outAttribute="status">"Vazio"</Outcome>
-        <ServiceInput function="statusControleVidro" service="statusService">
+        <ServiceInput service="StatusService" function="statusControleVidro">
             <Attribute name="status"/>
         </ServiceInput>
         
@@ -102,8 +103,8 @@
                 (LESS quantVidro 250)
             ) 
         </Query>
-        <Outcome outAttribute="status"> "Enchendo" </Outcome>
-        <ServiceInput function="statusControleVidro" service="StatusService">
+        <Outcome outAttribute="status">"Enchendo"</Outcome>
+        <ServiceInput service="StatusService" function="statusControleVidro">
             <Attribute name="status"/>
         </ServiceInput>
         
@@ -114,8 +115,8 @@
                 (EQUAL quantVidro 250)
             ) 
         </Query>
-        <Outcome outAttribute="status"> "Cheia" </Outcome>
-        <ServiceInput function="statusControleVidro" service="StatusService">
+        <Outcome outAttribute="status">"Cheia"</Outcome>
+        <ServiceInput service="StatusService" function="statusControleVidro">
             <Attribute name="status"/>
         </ServiceInput>
     </Reference>
